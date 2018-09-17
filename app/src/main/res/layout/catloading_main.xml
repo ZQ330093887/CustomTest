@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="170dp"
+    android:layout_height="200dp"
+    android:background="@drawable/background"
+    tools:context=".activity.LoadingActivity">
+
+    <ImageView
+        android:id="@+id/mouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/mouse" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/cat" />
+
+        <ImageView
+            android:id="@+id/eye_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginStart="3.5dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@mipmap/eyes" />
+
+        <com.example.customtest.widget.catloading.EyelidView
+            android:id="@+id/eyelid_left"
+            android:layout_width="24dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginStart="3.5dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@mipmap/eyes" />
+
+        <ImageView
+            android:id="@+id/eye_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@mipmap/eyes" />
+
+        <com.example.customtest.widget.catloading.EyelidView
+            android:id="@+id/eyelid_right"
+            android:layout_width="24dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@mipmap/eyes" />
+    </RelativeLayout>
+
+    <com.example.customtest.widget.catloading.GraduallyTextView
+        android:id="@+id/graduallyTextView"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="L O A D I N G ..."
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

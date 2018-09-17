@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cccccc"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.example.customtest.widget.down360style.Down360LoadingView
+            android:id="@+id/loading"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="@color/violet" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="暂停"
+            android:textColor="@color/chartreuse" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#cccccc"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <com.example.customtest.widget.down360style.Down360ViewGroup
+                android:id="@+id/down_loading_viewgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:bg_color="#33CCFF"
+                app:cancel_back_icon="@mipmap/close"
+                app:continue_back_icon="@mipmap/play"
+                app:left_loading_speed="2500"
+                app:right_loading_speed="8"
+                app:status_text_color="#cccccc"
+                app:stop_back_icon="@mipmap/stop" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

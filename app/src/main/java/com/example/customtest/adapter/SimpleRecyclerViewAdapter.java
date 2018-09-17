@@ -10,7 +10,6 @@ import com.bumptech.glide.Glide;
 import com.example.customtest.R;
 import com.example.customtest.vo.SimpleData;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,6 +56,10 @@ public class SimpleRecyclerViewAdapter extends RecyclerView.Adapter<SimpleRecycl
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mTextView.setText(mSongs.get(position).songName);
+        holder.mTextView.setOnClickListener(v -> {
+            //
+            callBackListener.onItemClick(v);
+        });
         Glide.with(holder.mImageView.getContext())
                 .load(mSongs.get(position).drawableResID)
                 .fitCenter()
@@ -66,6 +69,20 @@ public class SimpleRecyclerViewAdapter extends RecyclerView.Adapter<SimpleRecycl
     @Override
     public int getItemCount() {
         return mSongs.size();
+    }
+
+
+
+
+    /**********************接口部分*************************/
+    private OnClickCallBackListener callBackListener;
+
+    public void setCallBackListener(OnClickCallBackListener callBackListener) {
+        this.callBackListener = callBackListener;
+    }
+
+    public interface OnClickCallBackListener {
+        void onItemClick(View v);
     }
 
 

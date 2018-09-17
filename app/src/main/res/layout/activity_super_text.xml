@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="展示几种常见的显示方式" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="所有组合"
+                    android:textColor="@color/colorAccent" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    stv:sCenterBottomTextColor="@color/colorAccent"
+                    stv:sCenterBottomTextString="限额说明>>"
+                    stv:sCenterTopTextString=" "
+                    stv:sCenterViewGravity="left_center"
+                    stv:sLeftBottomTextString="招商银行（8888）"
+                    stv:sLeftIconRes="@drawable/bank_zhao_shang"
+                    stv:sLeftTopTextString="银行卡支付"
+                    stv:sLeftViewGravity="left_center"
+                    stv:sRightCheckBoxRes="@drawable/circular_check_bg"
+                    stv:sRightViewType="checkbox" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    stv:sLeftBottomTextColor="@color/colorAccent"
+                    stv:sLeftBottomTextString="限额说明>>"
+                    stv:sLeftIconRes="@drawable/not_bank_card_icon"
+                    stv:sLeftTopTextString="银行卡支付"
+                    stv:sLeftViewGravity="left_center"
+                    stv:sRightCheckBoxRes="@drawable/circular_check_bg" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:id="@+id/alipay_stv"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    stv:sLeftBottomTextColor="@color/gray"
+                    stv:sLeftBottomTextSize="15sp"
+                    stv:sLeftBottomTextString="数亿用户都在用，安全可托付"
+                    stv:sLeftIconRes="@drawable/alipay_icon"
+                    stv:sLeftTextColor="@android:color/black"
+                    stv:sLeftTextSize="20sp"
+                    stv:sLeftTextString="支付宝"
+                    stv:sLeftTvDrawableHeight="15dp"
+                    stv:sLeftTvDrawableRight="@drawable/original_label"
+                    stv:sLeftTvDrawableWidth="30dp"
+                    stv:sLeftViewGravity="left_center" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:id="@+id/sp_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    stv:sLeftIconHeight="50dp"
+                    stv:sLeftIconRes="@drawable/name_icon"
+                    stv:sLeftIconShowCircle="true"
+                    stv:sLeftIconWidth="50dp"
+                    stv:sLeftTextString="支持圆形图片"
+                    stv:sLeftViewGravity="left_center" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    stv:sCenterBottomTextColor="#979b9e"
+                    stv:sCenterBottomTextString="关注"
+                    stv:sCenterSpaceHeight="10dp"
+                    stv:sCenterTopTextString="666666"
+                    stv:sLeftBottomTextColor="#979b9e"
+                    stv:sLeftBottomTextString="点赞"
+                    stv:sLeftTopTextString="100000"
+                    stv:sLeftViewMarginLeft="30dp"
+                    stv:sRightBottomTextColor="#979b9e"
+                    stv:sRightBottomTextString="粉丝"
+                    stv:sRightTopTextString="888888"
+                    stv:sRightViewMarginRight="30dp" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    stv:sCenterBottomTextColor="@color/colorAccent"
+                    stv:sCenterBottomTextString="中下"
+                    stv:sCenterTextColor="@color/colorAccent"
+                    stv:sCenterTextString="中"
+                    stv:sCenterTopTextColor="@color/colorAccent"
+                    stv:sCenterTopTextString="中上"
+                    stv:sLeftBottomTextColor="@color/colorAccent"
+                    stv:sLeftBottomTextString="左下"
+                    stv:sLeftTextColor="@color/colorAccent"
+                    stv:sLeftTextString="左中文字"
+                    stv:sLeftTopTextColor="@color/colorAccent"
+                    stv:sLeftTopTextString="左上"
+                    stv:sRightBottomTextColor="@color/colorAccent"
+                    stv:sRightBottomTextString="右"
+                    stv:sRightTextColor="@color/colorAccent"
+                    stv:sRightTextString="右中"
+                    stv:sRightTopTextColor="@color/colorAccent"
+                    stv:sRightTopTextString="右" />
+
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:id="@+id/super_tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="visible"
+                    stv:sCenterTextString="代码设置对齐效果代码设置对齐效果代码设置对齐效果"
+                    stv:sCenterViewGravity="left_center"
+                    stv:sLeftTextString="换行对齐"
+                    stv:sLeftViewGravity="left_center"
+                    stv:sLeftViewWidth="80dp" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    stv:sLeftTopTextString="迪丽热巴"
+                    stv:sLeftViewGravity="left_center"
+                    stv:sRightIconRes="@drawable/arrow_right_red"
+                    stv:sRightTvDrawableRight="@drawable/head_default" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    stv:sLeftTopTextString="推送通知"
+                    stv:sLeftViewGravity="left_center"
+                    stv:sRightViewType="switchBtn" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sLeftTextString="声音"
+                    stv:sRightViewType="switchBtn"
+                    stv:sSwitchIsChecked="true"
+                    stv:sSwitchMinWidth="40dp"
+                    stv:sThumbResource="@drawable/thumb"
+                    stv:sTrackResource="@drawable/track" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sCenterTextColor="@color/white"
+                    stv:sCenterTvDrawableLeft="@mipmap/red_circle"
+                    stv:sCenterViewGravity="left_center"
+                    stv:sLeftIconRes="@drawable/uv"
+                    stv:sLeftTextString="钱包" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sLeftTextString="特别关心"
+                    stv:sRightIconRes="@drawable/arrow_right_red"
+                    stv:sRightTextBackground="@drawable/shape_cycle_rectangle"
+                    stv:sRightTextColor="@color/white"
+                    stv:sRightTextSize="10sp"
+                    stv:sRightTextString="NEW" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sLeftTextString="微信"
+                    stv:sRightTextBackground="@drawable/shape_cycle_rectangle_download"
+                    stv:sRightTextColor="@color/colorPrimary"
+                    stv:sRightTextSize="10sp"
+                    stv:sRightTextString="下载" />
+
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sLeftIconRes="@drawable/question"
+                    stv:sLeftTextString="常见问题" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    stv:sDividerLineType="both"
+                    stv:sLeftIconRes="@drawable/head_default"
+                    stv:sLeftTextString="帐号管理"
+                    stv:sRightIconRes="@drawable/arrow_right_red" />
+
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sLeftIconRes="@drawable/my_bankcard"
+                    stv:sLeftTextString="我的银行卡"
+                    stv:sRightTextColor="@color/colorAccent"
+                    stv:sRightTextString="已绑定" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sLeftTextString="设置中心"
+                    stv:sRightIconRes="@drawable/arrow_right_red" />
+
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sLeftTextSize="14dip"
+                    stv:sLeftTextString="客服热线"
+                    stv:sRightIconRes="@drawable/arrow_right_red"
+                    stv:sRightTextColor="#ff0000"
+                    stv:sRightTextSize="12dp"
+                    stv:sRightTextString="4006179999" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sLeftTextString="账号与安全"
+                    stv:sRightIconRes="@drawable/arrow_right_red"
+                    stv:sRightTextString="已保护"
+                    stv:sRightTvDrawableLeft="@drawable/v1" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sCenterTextString="88.88元"
+                    stv:sLeftTextString="2016-10-18"
+                    stv:sRightTextString="正常" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sLeftTextString="年化率"
+                    stv:sRightTextColor="@color/colorAccent"
+                    stv:sRightTextString="13.8%" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sLeftIconHeight="25dp"
+                    stv:sLeftIconRes="@drawable/ic_hint_music"
+                    stv:sLeftIconWidth="25dp"
+                    stv:sLeftTextString="自定义图片大小"
+                    stv:sRightTextString="宽高20dp" />
+
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sBackgroundDrawableRes="@drawable/selector_red"
+                    stv:sLeftTextString="自定义背景点击效果"
+                    stv:sRightIconRes="@drawable/arrow_right_red" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    stv:sLeftTextColor="@drawable/selector_stv_text_color"
+                    stv:sLeftTextString="账号与安全"
+                    stv:sRightIconRes="@drawable/arrow_right_red"
+                    stv:sRightTextString="已保护"
+                    stv:sRightTvDrawableLeft="@drawable/v1"
+                    stv:sShapeCornersRadius="5dp"
+                    stv:sShapeSelectorPressedColor="@color/gray"
+                    stv:sShapeStrokeColor="@color/colorAccent"
+                    stv:sShapeStrokeWidth="0.3dp"
+                    stv:sUseShape="true" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:id="@+id/setDiv_stv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    stv:sDividerLineType="both"
+                    stv:sLeftTextString="代码动态设置上下分割线的颜色" />
+
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    stv:sCenterTextString="下边展示使用网络图片的情况" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    stv:sLeftBottomTextString="188****8888"
+                    stv:sLeftIconHeight="40dp"
+                    stv:sLeftIconRes="@drawable/head_default"
+                    stv:sLeftIconShowCircle="true"
+                    stv:sLeftIconWidth="40dp"
+                    stv:sLeftTopTextString="张三"
+                    stv:sLeftViewGravity="left_center"
+                    stv:sRightTextString="已实名" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:id="@+id/super_tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    stv:sRightBottomTextString="188****8888"
+                    stv:sRightIconHeight="60dp"
+                    stv:sRightIconRes="@drawable/head_default"
+                    stv:sRightIconShowCircle="true"
+                    stv:sRightIconWidth="60dp"
+                    stv:sRightTopTextString="张三"
+                    stv:sRightViewGravity="right_center" />
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:id="@+id/super_tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    stv:sLeftMaxEms="30"
+                    stv:sLeftTextString="自定义sRightTvDrawableRight的宽高"
+                    stv:sLeftViewGravity="left_center"
+                    stv:sRightIconRes="@drawable/arrow_right_red"
+                    stv:sRightTvDrawableHeight="40dp"
+                    stv:sRightTvDrawableRight="@drawable/head_default"
+                    stv:sRightTvDrawableWidth="40dp" />
+
+
+                <com.example.customtest.widget.supertextview.SuperTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    stv:sCenterTextString="支付宝"
+                    stv:sCenterTvDrawableHeight="20dp"
+                    stv:sCenterTvDrawableLeft="@drawable/uy"
+                    stv:sCenterTvDrawableRight="@drawable/uy"
+                    stv:sCenterTvDrawableWidth="20dp"
+                    stv:sLeftTextString="支付宝"
+                    stv:sLeftTvDrawableHeight="10dp"
+                    stv:sLeftTvDrawableLeft="@drawable/uy"
+                    stv:sLeftTvDrawableRight="@drawable/uy"
+                    stv:sLeftTvDrawableWidth="10dp"
+                    stv:sRightTextString="支付宝"
+                    stv:sRightTvDrawableHeight="30dp"
+                    stv:sRightTvDrawableLeft="@drawable/uy"
+                    stv:sRightTvDrawableRight="@drawable/uy"
+                    stv:sRightTvDrawableWidth="30dp"
+                    stv:sTextViewDrawablePadding="3dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>
