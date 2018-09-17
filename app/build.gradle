@@ -44,4 +44,6 @@ dependencies {
     annotationProcessor 'com.google.dagger:dagger-compiler:2.14.1'
     implementation 'com.hivescm.common:common:1.2.2'
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+
+    implementation project(':IdCard')
 }

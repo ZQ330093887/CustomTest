@@ -1,5 +1,6 @@
 package com.example.customtest.viewmodel;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
@@ -33,10 +34,12 @@ public class MainViewModel extends BaseViewModel {
         activityOther.add("com.hivescm.commonbusiness.ui.dict.StreetDictActivity");
         activityOther.add("com.hivescm.commonbusiness.ui.dict.CityDictActivity");
         activityOther.add("com.example.customtest.MainActivity");
+        activityOther.add("com.anrongtec.ocr.PersonActivity");
         return activityItems;
     }
 
 
+    @SuppressLint("CheckResult")
     private void loadUsers(Context context) {
         Observable.create((ObservableOnSubscribe<ActivityItem>) e -> {
             PackageManager packageManager = context.getPackageManager();

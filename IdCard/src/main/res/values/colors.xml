@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="login_backgroud">#2e2e54</color>
+    <color name="login_white">#ffffff</color>
+    <color name="login_state">#0d66cb</color>
+    <color name="login_state_one">#194685</color>
+    <color name="hc_bg">#3289c7</color>
+    <color name="black">#000000</color>
+    <color name="gray_e3">#e3e3e3</color>
+    <color name="blue_11aaef">#11aaef</color>
+    <color name="btn_red">#ed3e1b</color>
+
+    <color name="btn_green">#16970c</color>
+    <color name="line">#767575</color>
+
+    <color name="viewfinder_frame">#00cc00</color><!-- 绿色 -->
+    <color name="viewfinder_mask">#60000000</color><!-- 灰度 -->
+    <color name="viewfinder_laser">#FFFFFF</color><!--白色 -->
+</resources>

@@ -23,6 +23,7 @@
         <activity android:name=".activity.NoDrawableActivity" />
         <activity android:name=".activity.SuperTextActivity" />
         <activity android:name=".activity.DownLoadingActivity" />
+        <activity android:name=".activity.IdCardActivity" />
     </application>
 
 </manifest>

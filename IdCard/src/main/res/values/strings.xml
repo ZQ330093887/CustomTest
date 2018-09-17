@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OCR安荣</string>
+
+    <string name="recog_sidcard">识别</string>
+    <string name="OK_return">确定</string>
+    <string name="toast_camera">无法启用相机</string>
+</resources>
