@@ -509,4 +509,56 @@
         <attr name="stop_back_icon" format="reference" />
         <attr name="continue_back_icon" format="reference" />
     </declare-styleable>
+
+    <declare-styleable name="CheckBox_Sample">
+        <attr name="size" format="dimension" />
+        <attr name="color_border" format="color" />
+        <attr name="color_background" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="LabelTextView">
+
+        <!--标签属性-->
+        <!--标签背景颜色-->
+        <attr name="labelBgColor" format="color"/>
+        <!--标签内容-->
+        <attr name="labelText" format="string"/>
+        <!--标签字体颜色-->
+        <attr name="labelTextColor" format="color"/>
+        <!--标签字体大小-->
+        <attr name="labelTextSize" format="dimension"/>
+        <!--标签宽度权重,起点为左上角-->
+        <attr name="labelWidthWeight" format="float"/>
+        <!--标签高度权重,起点为左上角-->
+        <attr name="labelHeightWeight" format="float"/>
+        <!--文字和底部间距-->
+        <attr name="labelTextPaddingBottom" format="dimension"/>
+        <!--文字和中点的间距-->
+        <attr name="labelTextPaddingCenter" format="dimension"/>
+
+        <!--圆角矩形-->
+        <!--矩形边界宽度-->
+        <attr name="roundRectBorderWidth" format="dimension"/>
+        <!--矩形四边半径-->
+        <attr name="roundRectRadius" format="dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="StackLabel">
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension"/>
+        <attr name="paddingVertical" format="dimension"/>
+        <attr name="paddingHorizontal" format="dimension"/>
+        <attr name="itemMargin" format="dimension"/>
+        <attr name="deleteButton" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ChannelView">
+        <attr name="channelSpacing" format="dimension" />
+        <attr name="channelHeight" format="dimension" />
+        <attr name="channelColumn" format="integer" />
+        <attr name="channelPadding" format="dimension" />
+        <attr name="channelVerticalSpacing" format="dimension" />
+        <attr name="channelHorizontalSpacing" format="dimension" />
+    </declare-styleable>
 </resources>

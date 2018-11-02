@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4F4F4"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.example.customtest.widget.checkboxsample.CheckBoxSample
+                    android:id="@+id/check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:color_background="#FF3F51B5"
+                    app:color_border="#FF3F51B5"
+                    app:size="32dp" />
+
+                <com.example.customtest.widget.checkboxsample.CheckBoxSample
+                    android:id="@+id/check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    app:color_background="#FFF44336"
+                    app:color_border="#FFFFFFFF"
+                    app:size="32dp" />
+
+                <com.example.customtest.widget.checkboxsample.CheckBoxSample
+                    android:id="@+id/check3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    app:color_background="#FF4CAF50"
+                    app:color_border="#FF4CAF50"
+                    app:size="32dp" />
+
+                <com.example.customtest.widget.checkboxsample.CheckBoxSample
+                    android:id="@+id/check4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    app:color_background="#FF00BCD4"
+                    app:color_border="#FFFFFFFF"
+                    app:size="32dp" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f6f6f6"
+                android:horizontalSpacing="8dp"
+                android:numColumns="3"
+                android:paddingLeft="7dp"
+                android:paddingTop="16dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="16dp"
+                android:verticalSpacing="11dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="搜索历史"
+                android:textSize="20dp" />
+
+            <com.example.customtest.widget.stacklabelview.StackLabel
+                android:id="@+id/stackLabelView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:deleteButton="false"
+                app:itemMargin="4dp"
+                app:paddingHorizontal="12dp"
+                app:paddingVertical="8dp"
+                app:textColor="#e6000000"
+                app:textSize="12dp" />
+
+            <Switch
+                android:id="@+id/switchDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="删除模式 "
+                android:textColor="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</layout>

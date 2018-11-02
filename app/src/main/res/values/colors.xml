@@ -9,6 +9,9 @@
     <color name="status_layout_click_view_text_color">#0084FF</color>
     <color name="common_pressed">#20000000</color>  <!--白色背景按下去的颜色-->
 
+    <color name="pop_channel_bg_color">#f6f6f6</color>
+    <color name="brand_color">#ff8800</color>
+
     <color name="white">#FFFFFF</color> <!--白色 -->
     <color name="ivory">#FFFFF0</color> <!--象牙色 -->
     <color name="lightyellow">#FFFFE0</color> <!--亮黄色 -->

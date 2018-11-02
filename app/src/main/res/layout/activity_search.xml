@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.customtest.widget.search.ObservableScrollView
+            android:id="@+id/sv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#ff0000" />
+
+                <com.example.customtest.widget.search.MyListview
+                    android:id="@+id/lv_searchview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.customtest.widget.search.MyListview>
+            </LinearLayout>
+
+
+        </com.example.customtest.widget.search.ObservableScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/rv_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/btn_green">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/back_icon" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ele_search_bg">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/search_icon" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/search_cancel" />
+        </RelativeLayout>
+    </FrameLayout>
+</layout>

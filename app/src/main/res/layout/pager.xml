@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <com.example.customtest.widget.labelview.LabelTextView
+        android:id="@+id/labelTextView"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@drawable/pop_channel_item_bg"
+        android:gravity="center"
+        android:textColor="@drawable/pop_channel_item_bg_text_selector"
+        android:textSize="13sp"
+        app:labelHeightWeight="1"
+        app:labelTextColor="@android:color/white"
+        app:labelTextPaddingCenter="1dp"
+        app:labelTextSize="9sp"
+        app:labelWidthWeight="4"
+        app:roundRectBorderWidth="1dp"
+        app:roundRectRadius="16dp" />
+</FrameLayout>

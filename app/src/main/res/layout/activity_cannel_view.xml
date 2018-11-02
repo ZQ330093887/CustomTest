@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.example.customtest.widget.channelview.ChannelView
+        android:id="@+id/channelView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:channelColumn="4"
+        app:channelHeight="40dp"
+        app:channelHorizontalSpacing="10dp"
+        app:channelPadding="10dp"
+        app:channelVerticalSpacing="5dp" />
+
+</layout>

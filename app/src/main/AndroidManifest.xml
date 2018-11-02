@@ -5,12 +5,13 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name="App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.Base">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +25,14 @@
         <activity android:name=".activity.SuperTextActivity" />
         <activity android:name=".activity.DownLoadingActivity" />
         <activity android:name=".activity.IdCardActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity
+            android:name=".activity.CheckBoxActivity"
+            android:label="自定义checkbox" />
+        <activity
+            android:name=".activity.ChannelViewActivity"
+            android:label="拖动、排序、增删，动态" />
+
     </application>
 
 </manifest>
