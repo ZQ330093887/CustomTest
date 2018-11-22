@@ -32,6 +32,15 @@
         <activity
             android:name=".activity.ChannelViewActivity"
             android:label="拖动、排序、增删，动态" />
+        <activity
+            android:name=".activity.LiveDataActivity"
+            android:label="Android消息总线，基于LiveData，具有生命周期感知能力" />
+        <activity
+            android:name=".activity.CarKeyBoardActivity"
+            android:label="车牌号输入框/输入键盘" />
+        <activity
+            android:name=".activity.AnyLayerActivity"
+            android:label="用于替代Android自带Dialog和PopupWindow" />
 
     </application>
 

@@ -19,6 +19,7 @@
                 android:orientation="vertical">
 
                 <com.example.customtest.widget.shapebutton.CommonShapeButton
+                    android:id="@+id/tv_sticky1"
                     android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_margin="10dp"

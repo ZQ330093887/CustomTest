@@ -6,4 +6,6 @@
     <string name="status_layout_manager_empty">还没有内容</string>
     <string name="status_layout_manager_error">似乎出了点问题</string>
     <string name="status_layout_manager_retry">重新加载</string>
+
+    <string name="dialog_msg">完美替换Android系统Dialog，具有高定制性，高易用性。</string>
 </resources>

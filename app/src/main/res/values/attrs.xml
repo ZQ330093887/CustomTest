@@ -561,4 +561,9 @@
         <attr name="channelVerticalSpacing" format="dimension" />
         <attr name="channelHorizontalSpacing" format="dimension" />
     </declare-styleable>
+
+
+    <declare-styleable name="ElasticView">
+        <attr name="flexibility" format="float" />
+    </declare-styleable>
 </resources>

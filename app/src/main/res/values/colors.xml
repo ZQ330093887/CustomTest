@@ -12,6 +12,9 @@
     <color name="pop_channel_bg_color">#f6f6f6</color>
     <color name="brand_color">#ff8800</color>
 
+    <color name="startColor">#59FFFFFF</color>
+    <color name="endColor">#23FFFFFF</color>
+
     <color name="white">#FFFFFF</color> <!--白色 -->
     <color name="ivory">#FFFFF0</color> <!--象牙色 -->
     <color name="lightyellow">#FFFFE0</color> <!--亮黄色 -->
@@ -158,4 +161,37 @@
     <color name="darkblue">#00008B</color> <!--暗蓝色 -->
     <color name="navy">#000080</color> <!--海军色 -->
     <color name="black">#000000</color> <!--黑色 -->
+
+
+
+    <!-- 按钮颜色 白色系 -->
+    <color name="btn_color_white_normal">#FFFFFF</color>
+    <color name="btn_color_white_pressed">#e5e5e5</color>
+    <color name="btn_color_white_disable">#CCCCCC</color>
+
+    <!-- 透明背景颜色 -->
+    <color name="translucent">#00000000</color>
+    <color name="translucentSec">#80000000</color>
+    <color name="dialog_bg">#33000000</color>
+    <!-- 窗口颜色-->
+    <color name="colorwindowBackground">#f2f5f7</color>
+    <color name="colorTextPrimary">#18202a</color>
+    <color name="colorTextBlue">#39b8ff</color>
+    <color name="colorTextPrimarySec">#18202a</color>
+    <color name="colorTextPrimaryLight">#707b89</color>
+    <color name="colorText777">#777777</color>
+    <!-- 更浅色字体-->
+    <color name="colorTextPrimaryMoreLight">#979797</color>
+    <color name="colorLine">#e9eaeb</color>
+    <color name="colorLineSec">#eaeaea</color>
+    <!-- 内容区域颜色 -->
+    <color name="colorItemBg">#FFF</color>
+    <color name="colorEnableMore">#18202a</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorblack">#000000</color>
+    <color name="colorEnable">#E5E4E4</color>
+
+    <color name="colorRed">#ff4b38</color>
+    <color name="colorOrange">#ff7c25</color>
+    <color name="colorBlue">#13de64</color>
 </resources>
