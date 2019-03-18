@@ -4,18 +4,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.example.customtest.viewmodel.MainViewModel;
 import com.example.customtest.R;
 import com.example.customtest.adapter.SimpleRecyclerViewAdapter;
 import com.example.customtest.databinding.ActivityLoadingTestBinding;
+import com.example.customtest.viewmodel.MainViewModel;
 import com.example.customtest.widget.catloading.CatLoadingView;
 import com.example.customtest.widget.statuslayoutmanage.OnStatusChildClickListener;
 import com.example.customtest.widget.statuslayoutmanage.StatusLayoutManager;
-import com.hivescm.common.widget.ToastUtils;
 import com.hivescm.commonbusiness.base.BaseActivity;
 import com.hivescm.commonbusiness.di.Injectable;
-import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
-import com.scwang.smartrefresh.layout.header.ClassicsHeader;
+import com.hivescm.commonbusiness.util.ToastUtils;
+import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProviders;
@@ -52,27 +51,37 @@ public class LoadingActivity extends BaseActivity<MainViewModel, ActivityLoading
 
 
     private void initRefreshLayout() {
-        mBinding.refreshLayout.setRefreshHeader(new ClassicsHeader(this));
-        mBinding.refreshLayout.setRefreshFooter(new ClassicsFooter(this));
-        mBinding.refreshLayout.setOnRefreshListener(rf -> rf.getLayout().postDelayed(() -> {
-            mAdapter.loadMore();
-            statusLayoutManager.showSuccessLayout();
-            rf.finishRefresh();
-        }, 1000));
+//        mBinding.refreshLayout.setRefreshHeader(new ClassicsHeader(this));
+//        mBinding.refreshLayout.setRefreshFooter(new ClassicsFooter(this));
 
-        mBinding.refreshLayout.setOnLoadMoreListener(rf -> rf.getLayout().postDelayed(() -> {
-            if (mAdapter.getItemCount() > 30) {
-                ToastUtils.showToast(LoadingActivity.this, "数据全部加载完毕");
-                rf.finishLoadMoreWithNoMoreData();//将不会再次触发加载更多事件
-            } else {
-                mAdapter.loadMore();
-                rf.finishLoadMore();
+        mBinding.rvContent.setLoadingListener(new XRecyclerView.LoadingListener() {
+            @Override
+            public void onRefresh() {
+                mBinding.llRoot.postDelayed(() -> {
+                    mAdapter.loadMore();
+                    statusLayoutManager.showSuccessLayout();
+                    mBinding.rvContent.refreshComplete();
+                }, 1000);
             }
-        }, 2000));
+
+            @Override
+            public void onLoadMore() {
+                mBinding.llRoot.postDelayed(() -> {
+                    if (mAdapter.getItemCount() > 30) {
+                        ToastUtils.showToast(LoadingActivity.this, "数据全部加载完毕");
+                        mBinding.rvContent.setNoMore(true);//将不会再次触发加载更多事件
+
+                    } else {
+                        mAdapter.loadMore();
+                        mBinding.rvContent.loadMoreComplete();
+                    }
+                }, 2000);
+            }
+        });
     }
 
     private void initStatusLayoutManager() {
-        statusLayoutManager = new StatusLayoutManager.Builder(mBinding.refreshLayout)
+        statusLayoutManager = new StatusLayoutManager.Builder(mBinding.rvContent)
                 // 设置重试事件监听器
                 .setOnStatusChildClickListener(new OnStatusChildClickListener() {
                     @Override
@@ -100,7 +109,7 @@ public class LoadingActivity extends BaseActivity<MainViewModel, ActivityLoading
     private void refreshData() {
         mBinding.llRoot.postDelayed(() -> {
             mAdapter.loadMore();
-            mBinding.refreshLayout.finishRefresh();
+            mBinding.rvContent.refreshComplete();
             statusLayoutManager.showSuccessLayout();
         }, 1000);
     }

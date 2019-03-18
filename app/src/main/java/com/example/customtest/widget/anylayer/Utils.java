@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.graphics.Bitmap;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -11,7 +13,7 @@ import androidx.annotation.Nullable;
 /**
  * Created by ZQiong on 2018/11/22.
  */
-class Utils {
+public class Utils {
 
     /**
      * 从当前上下文获取Activity
@@ -38,5 +40,13 @@ class Utils {
         view.buildDrawingCache(true);
         view.destroyDrawingCache();
         return view.getDrawingCache();
+    }
+
+
+    public static DisplayMetrics getMetrics(Activity activity) {
+        Display display = activity.getWindowManager().getDefaultDisplay();
+        DisplayMetrics metrics = new DisplayMetrics();
+        display.getMetrics(metrics);
+        return metrics;
     }
 }

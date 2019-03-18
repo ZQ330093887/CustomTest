@@ -1,10 +1,14 @@
 package com.example.customtest.activity;
 
+import android.app.Dialog;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.example.customtest.R;
 import com.example.customtest.databinding.ActivityAnyLayerBinding;
@@ -70,6 +74,7 @@ public class AnyLayerActivity extends BaseActivity<MainViewModel, ActivityAnyLay
         findViewById(R.id.tv_show_right_left_alpha).setOnClickListener(this);
         findViewById(R.id.tv_show_reveal).setOnClickListener(this);
     }
+
 
     @Override
     public void onClick(View v) {

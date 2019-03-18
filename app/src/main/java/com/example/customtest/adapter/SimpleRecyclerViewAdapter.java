@@ -62,7 +62,6 @@ public class SimpleRecyclerViewAdapter extends RecyclerView.Adapter<SimpleRecycl
         });
         Glide.with(holder.mImageView.getContext())
                 .load(mSongs.get(position).drawableResID)
-                .fitCenter()
                 .into(holder.mImageView);
     }
 

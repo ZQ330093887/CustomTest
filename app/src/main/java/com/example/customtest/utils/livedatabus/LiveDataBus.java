@@ -6,10 +6,10 @@ import com.example.customtest.utils.livedatabus.liveevent.LiveEvent;
 import java.util.HashMap;
 import java.util.Map;
 
+import androidx.annotation.NonNull;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.Observer;
-import io.reactivex.annotations.NonNull;
 
 /**
  * Created by ZQiong on 2018/11/5.

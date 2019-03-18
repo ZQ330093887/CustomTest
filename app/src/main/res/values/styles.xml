@@ -19,14 +19,12 @@
         <item name="android:backgroundDimAmount">0.6</item>
     </style>
 
-
     <!-- 自定义按钮样式 -->
     <style name="CommonShapeButtonStyle" parent="@style/Widget.AppCompat.Button">
         <item name="android:minWidth">0dp</item>
         <item name="android:minHeight">0dp</item>
         <item name="android:padding">0dp</item>
     </style>
-
 
     <!-- 自定义Button -->
     <style name="AppTheme.btnStyle">

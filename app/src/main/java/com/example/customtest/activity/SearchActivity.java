@@ -10,7 +10,6 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.example.customtest.R;
-import com.example.customtest.api.ApiService;
 import com.example.customtest.api.vo.ArticleBean;
 import com.example.customtest.databinding.ActivitySearchBinding;
 import com.example.customtest.utils.StatusBarUtil;
@@ -21,19 +20,11 @@ import com.example.customtest.widget.search.ScrollViewListener;
 import com.gyf.barlibrary.ImmersionBar;
 import com.hivescm.commonbusiness.base.BaseActivity;
 import com.hivescm.commonbusiness.di.Injectable;
-import com.hivescm.commonbusiness.util.ToastUtils;
-import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 import java.util.ArrayList;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProviders;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.observers.DisposableObserver;
-import io.reactivex.schedulers.Schedulers;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class SearchActivity extends BaseActivity<MainViewModel, ActivitySearchBinding> implements Injectable {
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -18,20 +17,13 @@
         android:layout_height="match_parent"
         tools:context="com.example.zhouqiong.customrf.ui.MainActivity">
 
-        <com.scwang.smartrefresh.layout.SmartRefreshLayout
-            android:id="@+id/refreshLayout"
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/rv_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#ffffff"
-            app:srlEnablePreviewInEditMode="false">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_content"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/white"
-                android:overScrollMode="never" />
-        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+            android:overScrollMode="never" />
 
     </LinearLayout>
 </layout>

@@ -7,9 +7,9 @@ import com.example.customtest.R;
 import com.example.customtest.databinding.ActivityLiveDataBinding;
 import com.example.customtest.utils.livedatabus.LiveDataBus;
 import com.example.customtest.viewmodel.MainViewModel;
-import com.hivescm.common.widget.ToastUtils;
 import com.hivescm.commonbusiness.base.BaseActivity;
 import com.hivescm.commonbusiness.di.Injectable;
+import com.hivescm.commonbusiness.util.ToastUtils;
 
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProviders;

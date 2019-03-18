@@ -1,11 +1,12 @@
 package com.example.customtest.activity;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
+
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.drawable.GlideDrawable;
-import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
 import com.example.customtest.R;
 import com.example.customtest.databinding.ActivitySuperTextBinding;
 import com.example.customtest.viewmodel.MainViewModel;
@@ -13,6 +14,7 @@ import com.hivescm.commonbusiness.base.BaseActivity;
 import com.hivescm.commonbusiness.di.Injectable;
 import com.squareup.picasso.Picasso;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -40,25 +42,20 @@ public class SuperTextActivity extends BaseActivity<MainViewModel, ActivitySuper
 
         Glide.with(this)
                 .load(url1)
-                .placeholder(R.drawable.head_default)
-                .fitCenter()
                 .into(mBinding.sp0.getLeftIconIV());
         Picasso.with(this)
                 .load(url1)
                 .placeholder(R.drawable.head_default)
                 .into(mBinding.tv1.getLeftIconIV());
-        Glide.with(this).load(url2).placeholder(R.drawable.head_default)
-                .into(new SimpleTarget<GlideDrawable>() {
+        Glide.with(this).load(url2)
+                .into(new SimpleTarget<Drawable>() {
                     @Override
-                    public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> glideAnimation) {
-//                        commonTextView.setLeftDrawableLeft(resource);
+                    public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
                         mBinding.tv1.getLeftIconIV().setImageDrawable(resource);
                     }
                 });
         Glide.with(this)
                 .load(url2)
-                .placeholder(R.drawable.head_default)
-                .fitCenter()
                 .into(mBinding.superTv2.getRightIconIV());
     }
 }

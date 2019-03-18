@@ -2,19 +2,15 @@ package com.example.customtest.activity;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.customtest.R;
 import com.example.customtest.databinding.ActivityDownLoadingBinding;
-import com.example.customtest.databinding.ActivityShapeButtonBinding;
 import com.example.customtest.viewmodel.MainViewModel;
 import com.example.customtest.widget.down360style.Down360LoadingView;
-import com.example.customtest.widget.down360style.Down360ViewGroup;
-import com.hivescm.common.widget.ToastUtils;
 import com.hivescm.commonbusiness.base.BaseActivity;
 import com.hivescm.commonbusiness.di.Injectable;
+import com.hivescm.commonbusiness.util.ToastUtils;
 
 import java.util.Timer;
 import java.util.TimerTask;
