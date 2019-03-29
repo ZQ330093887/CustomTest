@@ -194,4 +194,6 @@
     <color name="colorRed">#ff4b38</color>
     <color name="colorOrange">#ff7c25</color>
     <color name="colorBlue">#13de64</color>
+
+    <color name="background">#F2F2F2</color>
 </resources>

@@ -2,6 +2,9 @@ package com.example.customtest.activity;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
+import androidx.lifecycle.ViewModelProviders;
+
 import com.example.customtest.R;
 import com.example.customtest.databinding.ActivityShapeButtonBinding;
 import com.example.customtest.utils.livedatabus.LiveDataBus;
@@ -9,9 +12,6 @@ import com.example.customtest.viewmodel.MainViewModel;
 import com.hivescm.commonbusiness.base.BaseActivity;
 import com.hivescm.commonbusiness.di.Injectable;
 import com.hivescm.commonbusiness.util.ToastUtils;
-
-import androidx.annotation.Nullable;
-import androidx.lifecycle.ViewModelProviders;
 
 public class ShapeButtonActivity extends BaseActivity<MainViewModel, ActivityShapeButtonBinding> implements Injectable {
 
@@ -28,7 +28,6 @@ public class ShapeButtonActivity extends BaseActivity<MainViewModel, ActivitySha
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        mBinding.setLifecycleOwner(this);
 
         LiveDataBus.get()
                 .with("key_active_level", String.class)
